@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body > header > h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+body > main > div#divdado {
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.479);
+    border-radius: 30px;
+    background-color: rgb(247, 232, 105);
+    font-size: 10em;
+    margin: 100px;
+    text-align: center;
+}
+
+body > main > div#divbotao {
+    margin: auto;
+    width: 500px;
+    height: 150px;
+    border-radius: 30px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.568);
+}
+
+body > main > div#divbotao > button#botao {
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 5em;
+    background-color: rgb(255, 49, 49);
+}
