@@ -33,6 +33,19 @@ body > main > div#divbotao {
     height: 150px;
     border-radius: 30px;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.568);
+    transition: scale 0.15s ease;
+}
+
+.clicado {
+    scale: 0.96;
+    transition: scale 0.3s;
+    box-shadow: 1px 1px 3px black;
+}
+
+.rolar {
+    transform: rotateX(360deg);
+    scale: 0.95;
+    transition: transform 0.5s, scale 0.3s ease-in-out;
 }
 
 body > main > div#divbotao > button#botao {

@@ -2,6 +2,8 @@ let dado = document.getElementById('divdado')
 
 document.getElementById('botao').addEventListener('click', clicker)
 
+let idTimeout = null
+
 function clicker() {
     let num = Math.random()
     let numMulti = Math.round(num * 6)
@@ -14,6 +16,15 @@ function clicker() {
     let corPadronada1 = gerarCor()
     let corPadronada2 = gerarCor()
     let corPadronada3 = gerarCor()
+
+    document.getElementById('divbotao').classList.add('clicado')
+    document.getElementById('divdado').classList.add('rolar')
+    clearTimeout()
+
+    idTimeout = setTimeout(() => { 
+            document.getElementById('divbotao').classList.remove('clicado')
+            document.getElementById('divdado').classList.remove('rolar')
+        }, 300);
 
 
     dado.style.backgroundColor = `rgb(${corPadronada1}, ${corPadronada2}, ${corPadronada3})`
